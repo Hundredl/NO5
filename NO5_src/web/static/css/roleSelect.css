@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat',sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --word-color: white;
+    --background-color: #202020;
+    --banner-opacity:40%;
+    --login-tran-time:0.4s;
+
+    --role-box-color:#4caf50;
+    --role-box-tran-time:0.3s;
+    --role-word-color: white;
+    --role-background-color:#202020;
+    --role-banner-opacity:50%
+}
+*{
+    --role-wrap-margin-left:50px;
+}
+body
+{
+    background-color: var(--role-background-color);
+    max-height: 100vh;
+}
+.banner
+{
+//background: url("../img/logInBackGround2.gif") no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.banner img {
+    max-width: 100%;
+    max-height: 100%;
+//width: auto;
+    height: 100%;
+    width: 100%;
+    opacity: var(--role-banner-opacity);
+}
+.roles_box_wrap
+{
+    max-width: 80%;
+    max-height: 80%;
+    width: 80%;
+    height: 80%;
+    //background: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: solid 5px rgba(0,0,0,0);//var(--role-box-color);
+    margin-top: 10px;
+    padding: 10px 20px;
+    /*margin-right: var(--role-wrap-margin-left);
+    margin-left: var(--role-wrap-margin-left);*/
+
+}
+.roles_box_wrap .roles_box{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.roles_box_wrap .roles_box .role_box
+{
+    width: 150px;
+    max-width: 150px;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 4px 0;
+    border: none;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+}
+.role_id
+{
+    display: none;
+}
+.img_box
+{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin:3px auto;
+
+}
+.img_box img
+{
+    max-width: 99%;
+    width: 80%;
+    height: auto;
+    margin:3px auto;
+    padding: 12px 8px;
+    border: 8px rgba(0,0,0,0) solid;
+    transition: var(--role-box-tran-time) ease;
+    opacity: 70%;
+}
+.img_box img:hover
+{
+    //max-width: 100%;
+    border:0 solid rgba(0,0,0,0);//var(--role-box-color);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+    //border-bottom: 3px solid rgba(256,256,256,0.6);
+    opacity: 100%;
+}
+.title
+{
+    font-size: 15px;
+    padding: 2px 0;
+    margin: 2px 0;
+    color: var(--role-word-color);
+    display: none;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+</web-app>
+
+<!--
+数据库和连接池需要
+druid-1.1.9.jar
+mysql-connector-java-5.1.7-bin.jar
+
+以下是测试需要：
+hamcrest-core-1.3.jar
+junit-4.12.jar
+
+ELST需要
+taglibs-standard-impl-1.2.1.jar
+taglibs-standard-spec-1.2.1.jar
+-->

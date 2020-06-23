@@ -1,0 +1,67 @@
+/*灰色遮罩层*/
+.message_box{
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+}
+/*弹出层*/
+.message_box .succ_pop{
+    width: 350px;
+    height: 270px;
+    background: var(--message-box-color2);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    z-index: 999;
+    border-radius: 5px;
+    opacity: 80%;
+}
+:root{
+    --message-box-color1:#4caf50;
+    --message-box-color2:#bce1bd ;
+    --message-box-hover: #62b966;
+}
+.message_box .succ_pop .title
+{
+    font-size: 30px;
+    text-align: right;
+    margin: 10px 10px;
+    color: var(--message-box-color1);
+}
+.message_box .succ_pop .title i{
+    cursor: pointer;
+}
+.message_box .succ_pop .message
+{
+    font-size: 30px;
+    color: var(--message-box-color1);
+    text-align: center;
+    margin-top: 50px;
+}
+.message_box .succ_pop .confirmation
+{
+    width: 20%;
+    height: 15%;
+    background: var(--message-box-color1);
+    display: block;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px;
+    color: var(--message-box-color2);
+    margin-top: 50px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.message_box .succ_pop .confirmation:hover
+{
+    background: var(--message-box-hover);
+}
