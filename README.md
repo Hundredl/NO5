@@ -14,6 +14,9 @@ This repository contains part of the user interface of the NO5 (a forum of  Iden
 - thumb the costumes
 
   
+## Videos
+https://www.bilibili.com/video/BV1nZ4y1H78H/
+
 
 ## Tools
 
